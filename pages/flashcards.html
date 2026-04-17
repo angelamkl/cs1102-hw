@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards | Large-Scale Recommender Systems</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="site-branding">
+      <p class="eyebrow">CS1102 - Course Project - 2025/2026 Semester B</p>
+      <h1>Flashcard Practice</h1>
+      <p class="subtitle">Active recall deck for the key recommender system ideas.</p>
+      <p class="meta">Group members: Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="llm.html">LLMs</a>
+      <a href="ethics.html">Ethics</a>
+      <a href="discovery.html">Discovery</a>
+      <a href="flashcards.html" aria-current="page">Flashcards</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card flashcard-section" id="flashcards">
+      <p class="section-tag">Active Recall</p>
+      <h2>Flashcard Practice</h2>
+      <p>
+        Use the cards below to test your understanding. Reveal the answer, mark whether you got it right, and move through the deck in a random order.
+      </p>
+
+      <div class="flashcard-shell">
+        <div class="flashcard-topline">
+          <span id="flashcard-topic" class="pill">Topic</span>
+          <span id="flashcard-progress-count" class="flashcard-count">0 / 0</span>
+        </div>
+        <div id="flashcard-question" class="flashcard-question" aria-live="polite"></div>
+        <div id="flashcard-answer" class="flashcard-answer" hidden></div>
+
+        <div class="flashcard-actions">
+          <button id="show-answer-btn" class="button button-primary" type="button">Show Answer</button>
+          <button id="correct-btn" class="button button-success" type="button" hidden>I got it right</button>
+          <button id="wrong-btn" class="button button-secondary" type="button" hidden>I need to review</button>
+          <button id="restart-btn" class="button button-ghost" type="button">Restart Deck</button>
+        </div>
+
+        <div id="flashcard-progress" class="flashcard-progress"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CS1102 - Course Project - 2025/2026 Semester B</p>
+    <p>Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    <p>Topic: Large-Scale Recommender Systems in Business Applications</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

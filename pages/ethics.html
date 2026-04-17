@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethics | Large-Scale Recommender Systems</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="site-branding">
+      <p class="eyebrow">CS1102 - Course Project - 2025/2026 Semester B</p>
+      <h1>Ethics, Privacy, and Data Protection</h1>
+      <p class="subtitle">Why recommendation quality is not the only thing that matters.</p>
+      <p class="meta">Group members: Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="llm.html">LLMs</a>
+      <a href="ethics.html" aria-current="page">Ethics</a>
+      <a href="discovery.html">Discovery</a>
+      <a href="flashcards.html">Flashcards</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <p class="section-tag">Risks</p>
+      <h2>What can go wrong?</h2>
+      <div class="overview-grid">
+        <article>
+          <h3>Privacy leaks</h3>
+          <p>Recommendation systems often depend on detailed user behavior, so sensitive patterns can be exposed if data is poorly handled.</p>
+        </article>
+        <article>
+          <h3>Bias and unfairness</h3>
+          <p>If the data is biased, the recommender can keep amplifying the same preferences and under-serving some users or creators.</p>
+        </article>
+        <article>
+          <h3>Filter bubbles</h3>
+          <p>Users may see only narrow content that matches past behavior, which can reduce exploration and diversity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="section-tag">Mitigation</p>
+      <h2>High-level ways to reduce risk</h2>
+      <div class="overview-grid two-columns">
+        <article>
+          <h3>Data minimization</h3>
+          <p>Only keep the data that is truly needed for the task.</p>
+        </article>
+        <article>
+          <h3>Anonymization</h3>
+          <p>Remove or hide direct identifiers before analysis when possible.</p>
+        </article>
+        <article>
+          <h3>Privacy-preserving methods</h3>
+          <p>Concepts like differential privacy and federated learning reduce access to raw user data.</p>
+        </article>
+        <article>
+          <h3>Diversity-aware ranking</h3>
+          <p>Re-ranking can deliberately widen what users see so recommendations do not become too repetitive.</p>
+        </article>
+      </div>
+      <ul class="takeaways">
+        <li>Recommendation quality should be balanced with privacy and fairness.</li>
+        <li>Data protection matters more when LLMs are added.</li>
+        <li>Re-ranking can help improve diversity and reduce bubbles.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CS1102 - Course Project - 2025/2026 Semester B</p>
+    <p>Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    <p>Topic: Large-Scale Recommender Systems in Business Applications</p>
+  </footer>
+</body>
+</html>

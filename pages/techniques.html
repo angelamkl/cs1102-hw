@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techniques | Large-Scale Recommender Systems</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="site-branding">
+      <p class="eyebrow">CS1102 - Course Project - 2025/2026 Semester B</p>
+      <h1>Recommendation Techniques</h1>
+      <p class="subtitle">Collaborative, content-based, and hybrid methods explained with simple examples.</p>
+      <p class="meta">Group members: Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="techniques.html" aria-current="page">Techniques</a>
+      <a href="llm.html">LLMs</a>
+      <a href="ethics.html">Ethics</a>
+      <a href="discovery.html">Discovery</a>
+      <a href="flashcards.html">Flashcards</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <p class="section-tag">Basics</p>
+      <h2>What is a recommender system?</h2>
+      <p>
+        A recommender system predicts which items a user may find useful, such as movies, songs, products, or articles.
+        Businesses use them to help users find content faster and to make large catalogs easier to explore.
+      </p>
+      <div class="mini-diagram" aria-label="User recommender items diagram">
+        <span>User</span>
+        <span>→</span>
+        <span>Recommender</span>
+        <span>→</span>
+        <span>Items</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="section-tag">Core methods</p>
+      <h2>Three common recommendation approaches</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>How it works</th>
+              <th>Strength</th>
+              <th>Weakness</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Collaborative filtering</td>
+              <td>Looks at behavior from many users to find similar preference patterns.</td>
+              <td>Can discover unexpected items that fit a user’s taste.</td>
+              <td>Needs enough user interaction data.</td>
+            </tr>
+            <tr>
+              <td>Content-based filtering</td>
+              <td>Matches items by features such as genre, keywords, or category.</td>
+              <td>Works well when item descriptions are rich.</td>
+              <td>Can become too narrow and repetitive.</td>
+            </tr>
+            <tr>
+              <td>Hybrid approach</td>
+              <td>Combines behavior data and item features in one system.</td>
+              <td>Balances the benefits of both methods.</td>
+              <td>More complex to design and tune.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How the techniques compare in practice</h2>
+      <div class="overview-grid two-columns">
+        <article>
+          <h3>Collaborative filtering</h3>
+          <p>Useful when there is a lot of interaction data. It is similar to asking, “People like you also liked this.”</p>
+        </article>
+        <article>
+          <h3>Content-based filtering</h3>
+          <p>Useful when item descriptions are strong. It is similar to saying, “You liked this movie, so here are other movies with similar themes.”</p>
+        </article>
+        <article>
+          <h3>Hybrid systems</h3>
+          <p>Useful when a business wants both broad behavior signals and item-feature signals, especially for new or rare items.</p>
+        </article>
+      </div>
+      <ul class="takeaways">
+        <li>Collaborative filtering learns from crowd behavior.</li>
+        <li>Content-based filtering learns from item features.</li>
+        <li>Hybrid systems try to reduce the weaknesses of both.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <p class="section-tag">Large scale</p>
+      <h2>The three-stage recommender pipeline</h2>
+      <div class="pipeline">
+        <div class="pipeline-step">Catalog</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step pipeline-step-accent">Candidate generation</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Scoring</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Re-ranking</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Final list</div>
+      </div>
+      <p>
+        Candidate generation quickly narrows the catalog. Scoring ranks the most promising items more carefully.
+        Re-ranking then applies business goals such as freshness, diversity, and policy rules.
+      </p>
+      <ul class="takeaways">
+        <li>Large systems must be fast because they serve millions of users.</li>
+        <li>Not every item is scored in detail.</li>
+        <li>Business rules can change the final ordering.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CS1102 - Course Project - 2025/2026 Semester B</p>
+    <p>Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    <p>Topic: Large-Scale Recommender Systems in Business Applications</p>
+  </footer>
+</body>
+</html>

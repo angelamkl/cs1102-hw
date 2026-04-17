@@ -7,49 +7,86 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Large-Scale Recommender Systems in Business Applications</h1>
-    <p>CS1102 - Course Project - 2025/2026 Semester B</p>
-    <p>Angela Lam, 57886770; Teammate Name, Student ID; Teammate Name, Student ID</p>
+  <header class="site-header">
+    <div class="site-branding">
+      <p class="eyebrow">CS1102 - Course Project - 2025/2026 Semester B</p>
+      <h1>Large-Scale Recommender Systems in Business Applications</h1>
+      <p class="subtitle">How Netflix, Amazon, and TikTok decide what you see next.</p>
+      <p class="meta">Group members: Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    </div>
 
-    <h2>Techniques Demonstrated in the assignment</h2>
-    <ul>
-      <li>HTML page structure.</li>
-      <li>CSS styling and layout.</li>
-      <li>JavaScript interactivity.</li>
-    </ul>
-
-    <nav>
-      <a href="index.html">Home</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="pages/techniques.html">Techniques</a>
       <a href="pages/llm.html">LLMs</a>
       <a href="pages/ethics.html">Ethics</a>
       <a href="pages/discovery.html">Discovery</a>
+      <a href="pages/flashcards.html">Flashcards</a>
+      <a href="pages/quiz.html">Quiz</a>
       <a href="pages/references.html">References</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>
-        This website explains how recommender systems are used in business applications,
-        including recommendation techniques, LLM integration, and ethical concerns.
-      </p>
+    <section class="hero card" id="top">
+      <div class="hero-copy">
+        <p class="section-tag">Hook</p>
+        <h2>Why recommendations matter</h2>
+        <p>
+          When a user opens a shopping or streaming app, the catalog is too large to browse one item at a time.
+          Recommender systems reduce that overload by suggesting a smaller set of useful choices.
+        </p>
+        <p>
+          For businesses, that means better discovery, higher engagement, and more relevant experiences.
+        </p>
+        <a class="button button-primary" href="pages/techniques.html">Start Learning</a>
+      </div>
+
+      <aside class="hero-panel" aria-label="Simple recommendation flow">
+        <div class="flow-box">User</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box flow-box-accent">Recommender</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">Items</div>
+      </aside>
     </section>
 
-    <section>
-      <h2>Interactive Demo</h2>
-      <button id="demoBtn">Click to see a sample recommendation</button>
-      <p id="demoText">No recommendation yet.</p>
+    <section class="card">
+      <p class="section-tag">What you’ll find</p>
+      <h2>Techniques demonstrated</h2>
+      <ul class="techniques-list">
+        <li>Semantic HTML structure with multiple content sections.</li>
+        <li>Responsive CSS layout with cards, tables, and navigation.</li>
+        <li>Vanilla JavaScript flashcards with scoring and randomization.</li>
+      </ul>
     </section>
+
+    <section class="card">
+      <p class="section-tag">Overview</p>
+      <h2>What this site covers</h2>
+      <div class="overview-grid">
+        <article>
+          <h3>Basic ideas</h3>
+          <p>What recommender systems are, why businesses use them, and how collaborative, content-based, and hybrid methods differ.</p>
+        </article>
+        <article>
+          <h3>Large-scale systems</h3>
+          <p>How candidate generation, scoring, and re-ranking work together when there are millions of users and items.</p>
+        </article>
+        <article>
+          <h3>LLMs and ethics</h3>
+          <p>How large language models fit into recommendation workflows and why privacy, bias, and filter bubbles matter.</p>
+        </article>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>CS1102 - Course Project - 2025/2026 Semester B</p>
-    <p>Group Members: Angela Lam, ...</p>
+    <p>Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    <p>Topic: Large-Scale Recommender Systems in Business Applications</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

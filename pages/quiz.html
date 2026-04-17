@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz | Large-Scale Recommender Systems</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="site-branding">
+      <p class="eyebrow">CS1102 - Course Project - 2025/2026 Semester B</p>
+      <h1>Multiple Choice Quiz</h1>
+      <p class="subtitle">Practice with shuffled preset questions and see your results at the end.</p>
+      <p class="meta">Group members: Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="llm.html">LLMs</a>
+      <a href="ethics.html">Ethics</a>
+      <a href="discovery.html">Discovery</a>
+      <a href="flashcards.html">Flashcards</a>
+      <a href="quiz.html" aria-current="page">Quiz</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card quiz-section" id="quiz">
+      <p class="section-tag">Knowledge Check</p>
+      <h2>Multiple Choice Quiz</h2>
+      <p>
+        Answer each question once. The questions appear in random order each time you load the page.
+        Feedback is hidden until the final results screen.
+      </p>
+
+      <div class="quiz-shell">
+        <div class="flashcard-topline quiz-topline">
+          <span id="quiz-topic" class="pill">Topic</span>
+          <span id="quiz-progress-count" class="flashcard-count">0 / 0</span>
+        </div>
+
+        <div id="quiz-question" class="flashcard-question" aria-live="polite"></div>
+        <div id="quiz-options" class="quiz-options" role="radiogroup" aria-label="Quiz options"></div>
+
+        <div class="flashcard-actions quiz-actions">
+          <button id="quiz-next-btn" class="button button-primary" type="button">Next Question</button>
+          <button id="quiz-restart-btn" class="button button-ghost" type="button">Restart Quiz</button>
+        </div>
+
+        <div id="quiz-progress" class="flashcard-progress"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CS1102 - Course Project - 2025/2026 Semester B</p>
+    <p>Angela Lam (57886770), Member 2 (ID pending), Member 3 (ID pending), Member 4 (ID pending)</p>
+    <p>Topic: Large-Scale Recommender Systems in Business Applications</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
